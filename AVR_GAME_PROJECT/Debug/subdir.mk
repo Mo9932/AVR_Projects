@@ -5,6 +5,7 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../DIO.c \
+../DIO_INT.c \
 ../KeyPad.c \
 ../LCD.c \
 ../Special.c \
@@ -13,6 +14,7 @@ C_SRCS += \
 
 OBJS += \
 ./DIO.o \
+./DIO_INT.o \
 ./KeyPad.o \
 ./LCD.o \
 ./Special.o \
@@ -21,6 +23,7 @@ OBJS += \
 
 C_DEPS += \
 ./DIO.d \
+./DIO_INT.d \
 ./KeyPad.d \
 ./LCD.d \
 ./Special.d \

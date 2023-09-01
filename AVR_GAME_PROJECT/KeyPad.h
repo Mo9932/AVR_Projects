@@ -23,8 +23,8 @@
 
 #define KPD_CHEK 0xff
 
-#define KPD_KEYS {  {7,8,9},\
-					{4,5,6},\
+#define KPD_KEYS {  {4,4,9},\
+					{4,4,6},\
 					{1,2,3},\
 					{'c',0,'='}}
 

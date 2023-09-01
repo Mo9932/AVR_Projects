@@ -1,0 +1,88 @@
+#include<avr/io.h>
+#include<avr/interrupt.h>
+#include "STD_TYPES.h"
+#include "BIT_MATH.h"
+#include "DIO.h"
+#include "DIO_INT.h"
+
+
+
+void (*EXTI_PVidTemp[3])(void);
+
+void INT_Int()
+{
+#if INT == INT_0
+
+#if MODE==LOW_LEVEL
+	CLEAR_BIT(MCUCR,ISC00);
+	CLEAR_BIT(MCUCR,ISC01);
+#elif MODE==LOGICAL_CHANGE
+	SET_BIT(MCUCR,ISC00);
+	CLEAR_BIT(MCUCR,ISC01);
+#elif MODE==FALLING_EDGE
+	CLEAR_BIT(MCUCR,ISC00);
+	SET_BIT(MCUCR,ISC01);
+#elif MODE==RISING_EDGE
+	SET_BIT(MCUCR,ISC00);
+	SET_BIT(MCUCR,ISC01);
+#endif
+	SET_BIT(GICR,INT0);
+
+
+#elif INT == INT_1
+#if MODE==LOW_LEVEL
+	CLEAR_BIT(MCUCR,ISC10);
+	CLEAR_BIT(MCUCR,ISC11);
+#elif MODE==LOGICAL_CHANGE
+	SET_BIT(MCUCR,ISC10);
+	CLEAR_BIT(MCUCR,ISC11);
+#elif MODE==FALLING_EDGE
+	CLEAR_BIT(MCUCR,ISC10);
+	SET_BIT(MCUCR,ISC11);
+#elif MODE==RISING_EDGE
+	SET_BIT(MCUCR,ISC10);
+	SET_BIT(MCUCR,ISC11);
+#endif
+	SET_BIT(GICR,INT1);
+
+#elif INT == INT_2
+#if MODE == FALLING_EDGE
+	CLEAR_BIT(MCUCSR, ISC2);
+#elif MODE == FALLING_EDGE
+	SET_BIT(MCUCSR, ISC2);
+#endif
+	SET_BIT(GICR, INT2);
+
+#endif
+
+}
+
+void INT_GIE()
+{
+#if GIE==ENABLE
+	SET_BIT(SREG,I_BIT);
+#elif GIE==DISABLE
+	CLEAR_BIT(SREG,I_BIT);
+#endif
+}
+
+
+void EXT_INTADD(u8 index,void(*Copy_add)(void))
+{
+	EXTI_PVidTemp[index]=Copy_add;
+}
+
+ISR(INT0_vect)
+{
+	EXTI_PVidTemp[0]();
+}
+
+ISR(INT1_vect)
+{
+	EXTI_PVidTemp[1]();
+}
+
+ISR(INT2_vect)
+{
+	EXTI_PVidTemp[2]();
+}
