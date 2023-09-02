@@ -163,7 +163,7 @@ LOAD e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x2a62
+.text           0x00000000     0x2d3e
  *(.vectors)
  .vectors       0x00000000       0x54 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
                 0x00000000                __vectors
@@ -347,39 +347,39 @@ LOAD e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64
                 0x0000224e      0x110 ./LCD.o
                 0x0000224e                LCD_VidClear
  .text.LCD_PrintDino
-                0x0000235e      0x45e ./Special.o
+                0x0000235e      0x6c4 ./Special.o
                 0x0000235e                LCD_PrintDino
  .text.TIM0_VidInt
-                0x000027bc       0x6a ./Timer.o
-                0x000027bc                TIM0_VidInt
+                0x00002a22       0x6a ./Timer.o
+                0x00002a22                TIM0_VidInt
  .text.TIM0_SetCallBack
-                0x00002826       0x36 ./Timer.o
-                0x00002826                TIM0_SetCallBack
+                0x00002a8c       0x36 ./Timer.o
+                0x00002a8c                TIM0_SetCallBack
  .text.__vector_11
-                0x0000285c       0x8c ./Timer.o
-                0x0000285c                __vector_11
+                0x00002ac2       0x8c ./Timer.o
+                0x00002ac2                __vector_11
  .text.__vector_10
-                0x000028e8       0x84 ./Timer.o
-                0x000028e8                __vector_10
- .text.main     0x0000296c       0x48 ./main.o
-                0x0000296c                main
+                0x00002b4e       0x84 ./Timer.o
+                0x00002b4e                __vector_10
+ .text.main     0x00002bd2       0xbe ./main.o
+                0x00002bd2                main
  .text.Set_State
-                0x000029b4       0x14 ./main.o
-                0x000029b4                Set_State
- .text.libgcc   0x000029c8       0x28 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
-                0x000029c8                __udivmodhi4
- .text.libgcc   0x000029f0        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x000029f0        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x000029f0        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
- .text.libgcc   0x000029f0       0x38 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
-                0x000029f0                __prologue_saves__
- .text.libgcc   0x00002a28       0x36 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
-                0x00002a28                __epilogue_restores__
-                0x00002a5e                . = ALIGN (0x2)
+                0x00002c90       0x14 ./main.o
+                0x00002c90                Set_State
+ .text.libgcc   0x00002ca4       0x28 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x00002ca4                __udivmodhi4
+ .text.libgcc   0x00002ccc        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00002ccc        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00002ccc        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00002ccc       0x38 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                0x00002ccc                __prologue_saves__
+ .text.libgcc   0x00002d04       0x36 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x00002d04                __epilogue_restores__
+                0x00002d3a                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00002a5e        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
-                0x00002a5e                exit
-                0x00002a5e                _exit
+ .fini9         0x00002d3a        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00002d3a                exit
+                0x00002d3a                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -398,11 +398,11 @@ LOAD e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00002a5e        0x4 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .fini0         0x00002d3a        0x4 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00002a62                _etext = .
+                0x00002d3e                _etext = .
 
-.data           0x00800060      0x18c load address 0x00002a62
+.data           0x00800060      0x1ba load address 0x00002d3e
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
@@ -410,107 +410,115 @@ LOAD e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64
  .data          0x00800060        0x0 ./DIO_INT.o
  .data          0x00800060        0x0 ./KeyPad.o
  .data          0x00800060        0x0 ./LCD.o
- .data          0x00800060        0x0 ./Special.o
- .data          0x00800060        0x0 ./Timer.o
- .data          0x00800060        0x0 ./main.o
- .data          0x00800060        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
- .data          0x00800060        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .data          0x00800060        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .data          0x00800060        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
- .data          0x00800060        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
- .data          0x00800060        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
- .data          0x00800060        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
- .data          0x00800060        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_eq_sf.o)
- .data          0x00800060        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
- .data          0x00800060        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
- .data          0x00800060        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
- .data          0x00800060        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
- .data          0x00800060        0x8 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
-                0x00800060                __thenan_sf
- .data          0x00800068        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_usi_to_sf.o)
- .data          0x00800068        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
- .data          0x00800068        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
- .data          0x00800068        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
- .data          0x00800068        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
- .data          0x00800068        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
- .data          0x00800068        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
- .data          0x00800068      0x100 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
-                0x00800068                __clz_tab
+ .data          0x00800060       0x26 ./Special.o
+ .data          0x00800086        0x0 ./Timer.o
+ .data          0x00800086        0x0 ./main.o
+ .data          0x00800086        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x00800086        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800086        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800086        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00800086        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .data          0x00800086        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .data          0x00800086        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .data          0x00800086        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_eq_sf.o)
+ .data          0x00800086        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .data          0x00800086        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .data          0x00800086        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .data          0x00800086        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .data          0x00800086        0x8 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+                0x00800086                __thenan_sf
+ .data          0x0080008e        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_usi_to_sf.o)
+ .data          0x0080008e        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+ .data          0x0080008e        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+ .data          0x0080008e        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+ .data          0x0080008e        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .data          0x0080008e        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .data          0x0080008e        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+ .data          0x0080008e      0x100 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
+                0x0080008e                __clz_tab
  *(.data*)
  .data.KPD_u8Keys
-                0x00800168        0xc ./KeyPad.o
-                0x00800168                KPD_u8Keys
+                0x0080018e        0xc ./KeyPad.o
+                0x0080018e                KPD_u8Keys
  .data.KPD_u8RowPins
-                0x00800174        0x4 ./KeyPad.o
-                0x00800174                KPD_u8RowPins
+                0x0080019a        0x4 ./KeyPad.o
+                0x0080019a                KPD_u8RowPins
  .data.KPD_u8ColPins
-                0x00800178        0x3 ./KeyPad.o
-                0x00800178                KPD_u8ColPins
- .data.Dino_0   0x0080017b       0x38 ./Special.o
-                0x0080017b                Dino_0
- .data.Dino_1   0x008001b3       0x38 ./Special.o
-                0x008001b3                Dino_1
+                0x0080019e        0x3 ./KeyPad.o
+                0x0080019e                KPD_u8ColPins
+ .data.Dino_0   0x008001a1       0x38 ./Special.o
+                0x008001a1                Dino_0
+ .data.Dino_1   0x008001d9       0x38 ./Special.o
+                0x008001d9                Dino_1
+ .data.Tree_0   0x00800211        0x8 ./Special.o
+                0x00800211                Tree_0
  *(.rodata)
  *(.rodata*)
  *(.gnu.linkonce.d*)
-                0x008001ec                . = ALIGN (0x2)
- *fill*         0x008001eb        0x1 00
-                0x008001ec                _edata = .
-                0x008001ec                PROVIDE (__data_end, .)
+                0x0080021a                . = ALIGN (0x2)
+ *fill*         0x00800219        0x1 00
+                0x0080021a                _edata = .
+                0x0080021a                PROVIDE (__data_end, .)
 
-.bss            0x008001ec        0xf
-                0x008001ec                PROVIDE (__bss_start, .)
+.bss            0x0080021a       0x12
+                0x0080021a                PROVIDE (__bss_start, .)
  *(.bss)
- .bss           0x008001ec        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
- .bss           0x008001ec        0x0 ./DIO.o
- .bss           0x008001ec        0x0 ./DIO_INT.o
- .bss           0x008001ec        0x0 ./KeyPad.o
- .bss           0x008001ec        0x0 ./LCD.o
- .bss           0x008001ec        0x0 ./Special.o
- .bss           0x008001ec        0x0 ./Timer.o
- .bss           0x008001ec        0x0 ./main.o
- .bss           0x008001ec        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
- .bss           0x008001ec        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .bss           0x008001ec        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .bss           0x008001ec        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
- .bss           0x008001ec        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
- .bss           0x008001ec        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
- .bss           0x008001ec        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
- .bss           0x008001ec        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_eq_sf.o)
- .bss           0x008001ec        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
- .bss           0x008001ec        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
- .bss           0x008001ec        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
- .bss           0x008001ec        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
- .bss           0x008001ec        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
- .bss           0x008001ec        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_usi_to_sf.o)
- .bss           0x008001ec        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
- .bss           0x008001ec        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
- .bss           0x008001ec        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
- .bss           0x008001ec        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
- .bss           0x008001ec        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
- .bss           0x008001ec        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
- .bss           0x008001ec        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
+ .bss           0x0080021a        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x0080021a        0x0 ./DIO.o
+ .bss           0x0080021a        0x0 ./DIO_INT.o
+ .bss           0x0080021a        0x0 ./KeyPad.o
+ .bss           0x0080021a        0x0 ./LCD.o
+ .bss           0x0080021a        0x0 ./Special.o
+ .bss           0x0080021a        0x0 ./Timer.o
+ .bss           0x0080021a        0x0 ./main.o
+ .bss           0x0080021a        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x0080021a        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x0080021a        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x0080021a        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x0080021a        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .bss           0x0080021a        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .bss           0x0080021a        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .bss           0x0080021a        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_eq_sf.o)
+ .bss           0x0080021a        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .bss           0x0080021a        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .bss           0x0080021a        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .bss           0x0080021a        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .bss           0x0080021a        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .bss           0x0080021a        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_usi_to_sf.o)
+ .bss           0x0080021a        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+ .bss           0x0080021a        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+ .bss           0x0080021a        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+ .bss           0x0080021a        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .bss           0x0080021a        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .bss           0x0080021a        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+ .bss           0x0080021a        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
  *(.bss*)
+ .bss.Score.1314
+                0x0080021a        0x1 ./Special.o
+ .bss.Flag.1313
+                0x0080021b        0x1 ./Special.o
  .bss.counter.1265
-                0x008001ec        0x2 ./Timer.o
+                0x0080021c        0x2 ./Timer.o
  .bss.count.1278
-                0x008001ee        0x2 ./Timer.o
- .bss.TIM_FUN   0x008001f0        0x4 ./Timer.o
- .bss.State     0x008001f4        0x1 ./main.o
-                0x008001f4                State
+                0x0080021e        0x2 ./Timer.o
+ .bss.TIM_FUN   0x00800220        0x4 ./Timer.o
+ .bss.State     0x00800224        0x1 ./main.o
+                0x00800224                State
+ .bss.Location  0x00800225        0x1 ./main.o
+                0x00800225                Location
  *(COMMON)
- COMMON         0x008001f5        0x6 ./DIO_INT.o
-                0x008001f5                EXTI_PVidTemp
-                0x008001fb                PROVIDE (__bss_end, .)
-                0x00002a62                __data_load_start = LOADADDR (.data)
-                0x00002bee                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x00800226        0x6 ./DIO_INT.o
+                0x00800226                EXTI_PVidTemp
+                0x0080022c                PROVIDE (__bss_end, .)
+                0x00002d3e                __data_load_start = LOADADDR (.data)
+                0x00002ef8                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x008001fb        0x0
-                0x008001fb                PROVIDE (__noinit_start, .)
+.noinit         0x0080022c        0x0
+                0x0080022c                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x008001fb                PROVIDE (__noinit_end, .)
-                0x008001fb                _end = .
-                0x008001fb                PROVIDE (__heap_start, .)
+                0x0080022c                PROVIDE (__noinit_end, .)
+                0x0080022c                _end = .
+                0x0080022c                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -528,7 +536,7 @@ LOAD e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64
 .signature
  *(.signature*)
 
-.stab           0x00000000     0x23dc
+.stab           0x00000000     0x27a8
  *(.stab)
  .stab          0x00000000      0x708 ./DIO.o
  .stab          0x00000708      0x27c ./DIO_INT.o
@@ -537,16 +545,16 @@ LOAD e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64
                                 0x588 (size before relaxing)
  .stab          0x00000ce4      0xc6c ./LCD.o
                                 0xe94 (size before relaxing)
- .stab          0x00001950      0x570 ./Special.o
-                                0x798 (size before relaxing)
- .stab          0x00001ec0      0x318 ./Timer.o
+ .stab          0x00001950      0x8a0 ./Special.o
+                                0xac8 (size before relaxing)
+ .stab          0x000021f0      0x318 ./Timer.o
                                 0x540 (size before relaxing)
- .stab          0x000021d8      0x204 ./main.o
-                                0x42c (size before relaxing)
+ .stab          0x00002508      0x2a0 ./main.o
+                                0x4c8 (size before relaxing)
 
-.stabstr        0x00000000     0x10e6
+.stabstr        0x00000000     0x1146
  *(.stabstr)
- .stabstr       0x00000000     0x10e6 ./DIO.o
+ .stabstr       0x00000000     0x1146 ./DIO.o
 
 .stab.excl
  *(.stab.excl)
