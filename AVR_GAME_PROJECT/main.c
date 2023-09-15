@@ -29,7 +29,8 @@ int main(void)
 	KPD_VidInt();
 	INT_Int();										//Enable the interrupt
 	EXT_INTADD(INT_0,Set_State);					//If the interrupt flag is high call the state function
-    INT_GIE();										//Enable the global interrupt flag
+    INT_GIE();				//Enable the global interrupt flag
+
 
 	while(1)
 	{
@@ -59,6 +60,8 @@ int main(void)
 					INT_GIE();
 					Key=KPD_CHEK;
 				}
+				else
+					Key=KPD_CHEK;
 			}
 		}
 	}

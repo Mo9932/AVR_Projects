@@ -163,7 +163,7 @@ LOAD e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x2d3e
+.text           0x00000000     0x2d74
  *(.vectors)
  .vectors       0x00000000       0x54 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
                 0x00000000                __vectors
@@ -347,39 +347,39 @@ LOAD e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64
                 0x0000224e      0x110 ./LCD.o
                 0x0000224e                LCD_VidClear
  .text.LCD_PrintDino
-                0x0000235e      0x6c4 ./Special.o
+                0x0000235e      0x6f4 ./Special.o
                 0x0000235e                LCD_PrintDino
  .text.TIM0_VidInt
-                0x00002a22       0x6a ./Timer.o
-                0x00002a22                TIM0_VidInt
+                0x00002a52       0x6a ./Timer.o
+                0x00002a52                TIM0_VidInt
  .text.TIM0_SetCallBack
-                0x00002a8c       0x36 ./Timer.o
-                0x00002a8c                TIM0_SetCallBack
+                0x00002abc       0x36 ./Timer.o
+                0x00002abc                TIM0_SetCallBack
  .text.__vector_11
-                0x00002ac2       0x8c ./Timer.o
-                0x00002ac2                __vector_11
+                0x00002af2       0x8c ./Timer.o
+                0x00002af2                __vector_11
  .text.__vector_10
-                0x00002b4e       0x84 ./Timer.o
-                0x00002b4e                __vector_10
- .text.main     0x00002bd2       0xbe ./main.o
-                0x00002bd2                main
+                0x00002b7e       0x84 ./Timer.o
+                0x00002b7e                __vector_10
+ .text.main     0x00002c02       0xc4 ./main.o
+                0x00002c02                main
  .text.Set_State
-                0x00002c90       0x14 ./main.o
-                0x00002c90                Set_State
- .text.libgcc   0x00002ca4       0x28 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
-                0x00002ca4                __udivmodhi4
- .text.libgcc   0x00002ccc        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x00002ccc        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x00002ccc        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
- .text.libgcc   0x00002ccc       0x38 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
-                0x00002ccc                __prologue_saves__
- .text.libgcc   0x00002d04       0x36 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
-                0x00002d04                __epilogue_restores__
-                0x00002d3a                . = ALIGN (0x2)
+                0x00002cc6       0x14 ./main.o
+                0x00002cc6                Set_State
+ .text.libgcc   0x00002cda       0x28 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x00002cda                __udivmodhi4
+ .text.libgcc   0x00002d02        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00002d02        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00002d02        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00002d02       0x38 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                0x00002d02                __prologue_saves__
+ .text.libgcc   0x00002d3a       0x36 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x00002d3a                __epilogue_restores__
+                0x00002d70                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00002d3a        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
-                0x00002d3a                exit
-                0x00002d3a                _exit
+ .fini9         0x00002d70        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00002d70                exit
+                0x00002d70                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -398,11 +398,11 @@ LOAD e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00002d3a        0x4 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .fini0         0x00002d70        0x4 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00002d3e                _etext = .
+                0x00002d74                _etext = .
 
-.data           0x00800060      0x1ba load address 0x00002d3e
+.data           0x00800060      0x1ba load address 0x00002d74
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
@@ -452,11 +452,12 @@ LOAD e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64
                 0x008001d9                Dino_1
  .data.Tree_0   0x00800211        0x8 ./Special.o
                 0x00800211                Tree_0
+ .data.Iterator.1315
+                0x00800219        0x1 ./Special.o
  *(.rodata)
  *(.rodata*)
  *(.gnu.linkonce.d*)
                 0x0080021a                . = ALIGN (0x2)
- *fill*         0x00800219        0x1 00
                 0x0080021a                _edata = .
                 0x0080021a                PROVIDE (__data_end, .)
 
@@ -510,8 +511,8 @@ LOAD e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64
  COMMON         0x00800226        0x6 ./DIO_INT.o
                 0x00800226                EXTI_PVidTemp
                 0x0080022c                PROVIDE (__bss_end, .)
-                0x00002d3e                __data_load_start = LOADADDR (.data)
-                0x00002ef8                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00002d74                __data_load_start = LOADADDR (.data)
+                0x00002f2e                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x0080022c        0x0
                 0x0080022c                PROVIDE (__noinit_start, .)
@@ -536,7 +537,7 @@ LOAD e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64
 .signature
  *(.signature*)
 
-.stab           0x00000000     0x27a8
+.stab           0x00000000     0x27fc
  *(.stab)
  .stab          0x00000000      0x708 ./DIO.o
  .stab          0x00000708      0x27c ./DIO_INT.o
@@ -545,16 +546,16 @@ LOAD e:/iti tranning/01- imt sdk-20230729t112521z-001/01- imt sdk/imt_sdk_win_64
                                 0x588 (size before relaxing)
  .stab          0x00000ce4      0xc6c ./LCD.o
                                 0xe94 (size before relaxing)
- .stab          0x00001950      0x8a0 ./Special.o
-                                0xac8 (size before relaxing)
- .stab          0x000021f0      0x318 ./Timer.o
+ .stab          0x00001950      0x8e8 ./Special.o
+                                0xb10 (size before relaxing)
+ .stab          0x00002238      0x318 ./Timer.o
                                 0x540 (size before relaxing)
- .stab          0x00002508      0x2a0 ./main.o
-                                0x4c8 (size before relaxing)
+ .stab          0x00002550      0x2ac ./main.o
+                                0x4d4 (size before relaxing)
 
-.stabstr        0x00000000     0x1146
+.stabstr        0x00000000     0x1156
  *(.stabstr)
- .stabstr       0x00000000     0x1146 ./DIO.o
+ .stabstr       0x00000000     0x1156 ./DIO.o
 
 .stab.excl
  *(.stab.excl)

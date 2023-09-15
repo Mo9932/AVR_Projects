@@ -27,6 +27,7 @@ void LCD_PrintDino(u8 *Copy_State,u8 *Location,u8 Animation_Delay)
 	u8 count;
 	static u8 Flag=0;
 	static u8 Score=0;
+	static u8 Iterator=1;
 	LCD_VidSpecialChar(7,Tree_0);//Put the tree shape in CGRAM in this location
 	if(*Copy_State==0)
 	{
@@ -48,7 +49,7 @@ void LCD_PrintDino(u8 *Copy_State,u8 *Location,u8 Animation_Delay)
 				LCD_VidSendChar(count);
 			}
 		}
-		LCD_VidSendLocation(LINE_4,19-((*Location)-1));//Go to the location before tree
+		LCD_VidSendLocation(LINE_4,19-((*Location)-Iterator));//Go to the location before tree
 		LCD_VidSendChar(0xfe);						   //Print NULL Character
 		LCD_VidSendLocation(LINE_4,19-(*Location));	   //Go to the tree location
 		LCD_VidSendChar(7);							   //Print the tree
@@ -74,7 +75,7 @@ void LCD_PrintDino(u8 *Copy_State,u8 *Location,u8 Animation_Delay)
 				LCD_VidSendChar(count);
 			}
 		}
-		LCD_VidSendLocation(LINE_4,19-((*Location)-1));
+		LCD_VidSendLocation(LINE_4,19-((*Location)-Iterator));
 		LCD_VidSendChar(0xfe);
 		LCD_VidSendLocation(LINE_4,19-(*Location));
 		LCD_VidSendChar(7);
@@ -112,17 +113,17 @@ void LCD_PrintDino(u8 *Copy_State,u8 *Location,u8 Animation_Delay)
 		{
 			if(count<4)
 			{
-				LCD_VidSendLocation(LINE_2,count+1);
+				LCD_VidSendLocation(LINE_1,count+1);
 				LCD_VidSendChar(count);
 			}
 			if(count>3)
 			{
-				LCD_VidSendLocation(LINE_3,count-3);
+				LCD_VidSendLocation(LINE_2,count-3);
 				LCD_VidSendChar(count);
 			}
 		}
 		/*the same as in state 0*/
-		LCD_VidSendLocation(LINE_4,19-((*Location)-1));
+		LCD_VidSendLocation(LINE_4,19-((*Location)-Iterator));
 		LCD_VidSendChar(0xfe);
 		LCD_VidSendLocation(LINE_4,19-(*Location));
 		LCD_VidSendChar(7);
@@ -140,19 +141,23 @@ void LCD_PrintDino(u8 *Copy_State,u8 *Location,u8 Animation_Delay)
 			{
 				if(count<4)
 				{
-					LCD_VidSendLocation(LINE_2,count+1);
+					LCD_VidSendLocation(LINE_1,count+1);
 					LCD_VidSendChar(0xfe);
 				}
 				if(count>3)
 				{
-					LCD_VidSendLocation(LINE_3,count-3);
+					LCD_VidSendLocation(LINE_2,count-3);
 					LCD_VidSendChar(0xfe);
 				}
 			}
 		}
 		if((*Location)==20)
+		{
 			(*Location)=0;
-
+			Iterator++;
+			if(Iterator==3)
+				Iterator=1;
+		}
 		if((*Location)==18)
 			Score++;
 	}
@@ -178,6 +183,7 @@ void LCD_PrintDino(u8 *Copy_State,u8 *Location,u8 Animation_Delay)
 		LCD_VidSendString("Press * to Play");
 		Flag=3; //Update the flag to print the score and clear the screen for one time
 		Score=0;//Reset the score
+		Iterator=1;
 	}
 
 	LCD_VidSendLocation(LINE_4,0);
